@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/home.css') }}"
+/>{% endblock%} {% block title %}Welcome | Home{% endblock %} {% block content
+%}
+<h1 class="test">Welcome!</h1>
+<p>Create and play educational games.</p>
+{% endblock %}

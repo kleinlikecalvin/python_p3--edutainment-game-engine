@@ -51,7 +51,7 @@ An interactive **web-based educational game builder** built with **Flask**. Supp
    ```
 5. Run the script in your terminal:
    ```bash
-   python3 main.py
+   python3 app.py
    ``` -->
 
 ## Inspiration
