@@ -4,8 +4,13 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def base():
+def home():
     return render_template("home.html")
+
+
+@app.route("/flashcards")
+def flashcards():
+    return render_template("flashcards.html")
 
 
 if __name__ == "__main__":

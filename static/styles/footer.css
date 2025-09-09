@@ -1,0 +1,16 @@
+footer {
+  padding: 0;
+  background-color: var(--yellow);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+}
+
+footer a {
+  padding: 0;
+}
+
+footer a:hover {
+  padding: 20px;
+}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}Edutainment Game Engine{% endblock %}</title>
-
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles/global.css') }}"
@@ -12,20 +11,8 @@
     {% block styles %} {% endblock %}
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/play">Play Flashcards</a></li>
-          <li><a href="/create">Create Flashcards</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    {% include 'header.html' %}
     <main>{% block content %}{% endblock %}</main>
-
-    <footer>
-      <p>Coded by Nikki Klein</p>
-    </footer>
+    {% include 'footer.html' %}
   </body>
 </html>

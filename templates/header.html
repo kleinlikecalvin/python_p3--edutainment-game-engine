@@ -1,0 +1,23 @@
+{% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/header.css') }}"
+/>{% endblock%}
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="/" class="{% if request.path == '/' %}current{% endif %}"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/flashcards"
+          class="{% if request.path == '/flashcards' %}current{% endif %}"
+          >Play Flashcards</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
