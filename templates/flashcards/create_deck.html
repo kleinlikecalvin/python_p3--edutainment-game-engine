@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/flashcards.css') }}"
+/>{% endblock%} {% block title %}Create a new deck{% endblock %} {% block
+content %}
+<h1>Create a new deck!</h1>
+<form action=""></form>
+
+<!-- Need to support text only for initial project -->
+<!-- Front, back, and hint -->
+<!-- Deck title, subject and color -->
+<!-- Need to be able to save decks to collection with an account -->
+<!-- If not auth'd when saving - then prompted to login/create an account -->
+
+{% endblock %}

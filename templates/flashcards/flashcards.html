@@ -2,11 +2,11 @@
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='styles/flashcards.css') }}"
-/>{% endblock%} {% block title %}Welcome | Flashcards{% endblock %} {% block
-content %}
+/>{% endblock%} {% block title %}Flashcards{% endblock %} {% block content %}
 <h1>Let's use flashcards!</h1>
 <div class="options-container">
-  <button>Practice</button> <button>Create new flashcards</button>
+  <a href="/collection">Collection</a>
+  <a href="/create_deck">Create a new deck</a>
 </div>
 
 {% endblock %}

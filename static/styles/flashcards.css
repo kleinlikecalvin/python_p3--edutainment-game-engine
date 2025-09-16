@@ -3,3 +3,8 @@
   gap: 20px;
   justify-content: center;
 }
+
+.options-container a {
+  font-size: 20px;
+  font-weight: 500;
+}

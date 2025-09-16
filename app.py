@@ -10,7 +10,17 @@ def home():
 
 @app.route("/flashcards")
 def flashcards():
-    return render_template("flashcards.html")
+    return render_template("flashcards/flashcards.html")
+
+
+@app.route("/collection")
+def collection():
+    return render_template("flashcards/collection.html")
+
+
+@app.route("/create_deck")
+def create_deck():
+    return render_template("flashcards/create_deck.html")
 
 
 if __name__ == "__main__":
